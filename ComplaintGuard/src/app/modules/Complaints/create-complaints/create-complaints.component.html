@@ -1,0 +1,139 @@
+<!-- app.component.html -->
+
+<form class="complaint-form">
+  <div class="form-section">
+    <h2>Personal Information</h2>
+    <div formGroupName="personalInfo">
+      <label for="fullName">Full Name:</label>
+      <input id="fullName" type="text" pInputText formControlName="fullName" />
+
+      <label for="contactNumber">Contact Number:</label>
+      <input
+        id="contactNumber"
+        type="tel"
+        pInputText
+        formControlName="contactNumber"
+      />
+
+      <label for="emailAddress">Email Address:</label>
+      <input
+        id="emailAddress"
+        type="email"
+        pInputText
+        formControlName="emailAddress"
+      />
+
+      <label for="address">Address:</label>
+      <input id="address" type="text" pInputText formControlName="address" />
+    </div>
+  </div>
+
+  <div class="form-section">
+    <h2>Incident Details</h2>
+    <div formGroupName="incidentDetails">
+      <label for="dateTime">Date and Time of Incident:</label>
+      <input
+        id="dateTime"
+        type="datetime-local"
+        pInputText
+        formControlName="dateTime"
+      />
+
+      <label for="location">Location:</label>
+      <input id="location" type="text" pInputText formControlName="location" />
+
+      <label for="description">Description of the Incident:</label>
+      <textarea
+        id="description"
+        pInputTextarea
+        formControlName="description"
+      ></textarea>
+    </div>
+  </div>
+
+  <div class="form-section">
+    <h2>Type of Incident</h2>
+    <div formGroupName="typeOfIncident">
+      <label for="natureOfComplaint">Nature of Complaint:</label>
+      <input
+        id="natureOfComplaint"
+        type="text"
+        pInputText
+        formControlName="natureOfComplaint"
+      />
+
+      <label for="offenseDetails">Details of the Offense:</label>
+      <textarea
+        id="offenseDetails"
+        pInputTextarea
+        formControlName="offenseDetails"
+      ></textarea>
+    </div>
+  </div>
+
+  <div class="form-section">
+    <h2>Witness Information</h2>
+    <div formGroupName="witnessInfo">
+      <label for="witnessName">Witness Name:</label>
+      <input
+        id="witnessName"
+        type="text"
+        pInputText
+        formControlName="witnessName"
+      />
+
+      <label for="witnessContact">Witness Contact:</label>
+      <input
+        id="witnessContact"
+        type="tel"
+        pInputText
+        formControlName="witnessContact"
+      />
+    </div>
+  </div>
+
+  <div class="form-section">
+    <h2>Evidence Upload</h2>
+    <div formGroupName="evidenceUpload">
+      <label for="evidence">Upload Evidence:</label>
+      <!-- <p-fileUpload name="evidence" formControlName="evidence"></p-fileUpload> -->
+    </div>
+  </div>
+
+  <div class="form-section">
+    <h2>Additional Details</h2>
+    <label for="additionalDetails">Additional Details:</label>
+    <textarea
+      id="additionalDetails"
+      pInputTextarea
+      formControlName="additionalDetails"
+    ></textarea>
+  </div>
+
+  <div class="form-section">
+    <h2>Declaration and Consent</h2>
+    <div>
+      <!-- <p-checkbox label="I declare that the information provided is accurate and I consent to its use for investigation purposes"
+                  formControlName="declaration"></p-checkbox> -->
+    </div>
+  </div>
+
+  <div class="form-section">
+    <h2>Emergency Checkbox</h2>
+    <div>
+      <!-- <p-checkbox label="This is an emergency" formControlName="emergency"></p-checkbox> -->
+    </div>
+  </div>
+
+  <div class="form-section">
+    <h2>Follow-up Information</h2>
+    <div>
+      <label for="followUp">Preferred method of follow-up:</label>
+      <input id="followUp" type="text" pInputText formControlName="followUp" />
+    </div>
+  </div>
+
+  <div class="form-section">
+    <button type="submit" pButton>Submit Complaint</button>
+  </div>
+</form>

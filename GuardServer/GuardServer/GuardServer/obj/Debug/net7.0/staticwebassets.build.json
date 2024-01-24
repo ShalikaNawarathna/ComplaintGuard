@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "d1Gz/4+cMaYlTjCrpGeQFrOAe4IGFuuow8+0czOwlsQ=",
+  "Source": "GuardServer",
+  "BasePath": "_content/GuardServer",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}
